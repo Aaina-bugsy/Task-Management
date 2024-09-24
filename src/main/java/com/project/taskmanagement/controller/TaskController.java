@@ -25,7 +25,7 @@ public class TaskController {
     //show the task with the given id
     @GetMapping("/tasks/{id}")
     public ResponseEntity<?> getTask(@PathVariable int id){
-        Task task = service.getTaskById(id);
+        //Task task = service.getTaskById(id);
         return new ResponseEntity<>(service.getTaskById(id), HttpStatus.FOUND);
         /*if( task != null){
         }else{ return new ResponseEntity<>("Task not found",HttpStatus.NOT_FOUND);
