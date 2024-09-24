@@ -29,7 +29,7 @@ public class TaskService {
         return repo.save(task);
     }
 
-
+    //Update the task details
     public Task updateTask(int id, Task task) {
         Task tsk = repo.findById(id).orElseThrow(() -> new NoSuchElementException("Task not found with ID: " + id));
 
@@ -41,22 +41,27 @@ public class TaskService {
         return repo.save(tsk);
     }
 
+    //Delete task by id
     public void deleteTask(int id) {
         repo.deleteById(id);
     }
 
+    // Find a task by status
     public List<Task> getTaskByStatus(String status) {
         return repo.findByStatus(status);
     }
 
+    //Find a task by priority
     public List<Task> getTaskByPriority(String priority) {
         return repo.findByPriority(priority);
     }
 
+    //Sort tasks in ascending order of date
     public List<Task> getTaskSortedByDateAsc() {
         return repo.findAllByOrderByDateAsc();
     }
 
+    //Sort tasks in descending order of date
     public List<Task> getTaskSortedByDateDesc() {
         return repo.findAllByOrderByDateDesc();
     }
