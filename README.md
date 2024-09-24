@@ -1,45 +1,48 @@
-Task Management System
+# Task Management System 📝
 
-A simple web application designed to help users create, track, and manage tasks efficiently. The system allows users to set deadlines for tasks and sort them based on their due dates, ensuring better organization and time management.
+Welcome to the **Task Management System**! This project is designed to help users efficiently create, manage, and track tasks to improve productivity and time management.
 
-Features :-
-	• Create, update, and delete tasks
-	• Set deadlines for tasks
-	• View all tasks
-	• Sort tasks by:
-		○ Due date (ascending/descending)
-		○ Task status (completed, pending)
-	• Filter tasks by status (e.g., Completed, Pending)
-	• RESTful API for task management
-	
-Tech Stack:-
-	• Backend: Spring Boot (Java)
-	• Frontend: ReactJS (Optional if you have a frontend)
-	• Database: MySQL (or any other relational database)
-	• Build Tool: Maven
-	• Version Control: Git
-	
-Installation
-Prerequisites
-	• Java 21 or higher
-	• Maven
-	• MySQL (or your preferred relational database)
-	• Git
+---
 
-API Endpoints:-
-The Task Management System provides REST API endpoints for managing tasks:
-Method	     Endpoint	                                 Description
-GET	         /api/tasks	                            Retrieve all tasks
-GET	         /api/tasks/{id}	                      Retrieve a task by ID
-GET	         /api/tasks/status/{status}	            Retrieve tasks by status
-POST	       /api/tasks	                            Create a new task
-PUT	         /api/tasks/{id}	                      Update an existing task
-DELETE	     /api/tasks/{id}	                      Delete a task by ID
+## Features 🚀
 
-Future Enhancements
-	• User authentication and authorization (e.g., register, login)
-	• Prioritize tasks based on importance or urgency
-	• Add task reminders/notifications
-	• Integration with external calendars (e.g., Google Calendar)
+- ✅ **Create, Update, Delete Tasks** – Manage tasks with ease.
+- 📅 **Set Deadlines** – Assign due dates to tasks.
+- 📋 **Sort by Due Date** – View tasks in ascending or descending order of deadlines.
+- 🔍 **Filter Tasks by Status** – View tasks by their completion status (Completed, Pending).
+- 🌐 **RESTful API** – Manage tasks through backend APIs.
+
+---
+
+## Tech Stack ⚙️
+
+- **Backend**: Spring Boot (Java)
+- **Frontend**: ReactJS (Optional)
+- **Database**: MySQL (or any relational database)
+- **Build Tool**: Maven
+- **Version Control**: Git
+
+---
+
+## How to Install 🛠️
+
+### Prerequisites
+
+1. Install Java 21 or higher
+2. Install Maven
+3. Install MySQL (or any other preferred database)
+4. Install Git
+
+---
+
+## REST API Endpoints 🛠️
+
+- **GET** `/api/tasks` – Get all tasks
+- **GET** `/api/tasks/{id}` – Get task by ID
+- **GET** `/api/tasks/status/{status}` – Get tasks by status
+- **POST** `/api/tasks` – Create a new task
+- **PUT** `/api/tasks/{id}` – Update an existing task
+- **DELETE** `/api/tasks/{id}` – Delete a task
+
 
 
